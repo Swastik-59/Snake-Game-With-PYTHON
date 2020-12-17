@@ -55,17 +55,20 @@ font = pygame.font.SysFont(None, 35)
 
 # Function to display text on screen.
 def text_screen(text, color, x, y):
+
     screen_text = font.render(text, True, color)
     gameWindow.blit(screen_text, [x, y])
 
 # Function to plot snake on screen.
 def plot_snake(gameWindow, color, snk_list, snake_size):
+    
     for x, y in snk_list:
         pygame.draw.rect(gameWindow, color, [x, y, snake_size, snake_size])
 
 
 # WELCOME SCREEN
 def welcome():
+    
     exit_game = False
     while not exit_game:
         gameWindow.fill(violet)
@@ -85,6 +88,7 @@ def welcome():
 
 # Main game function
 def gameloop():
+    
     # Game Specific Variables
     exit_game = False
     game_over = False
