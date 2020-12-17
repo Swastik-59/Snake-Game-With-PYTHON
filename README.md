@@ -14,23 +14,39 @@ pygame.init()
 
 # Colors that we will use in game.
 white = (255, 255, 255)
+
 blue = (0, 0, 255)
+
 red = (255, 0, 0)
+
 black = (0, 0, 0)
+
 violet = (138, 43, 226)
+
 lime = (0, 255, 0)
+
 slate_blue = (123, 104, 238)
+
 coral = (255, 127, 80)
+
 sandy_brown = (244, 164, 96)
 
 # Creating game window.
+
 screen_width = 450
+
 screen_hight = 500
+
 gameWindow = pygame.display.set_mode((screen_width, screen_hight))
+
 pygame.display.set_caption("snake game")
+
 bgimg = pygame.image.load("background.jpg")
+
 bgimg = pygame.transform.scale(
-    bgimg, (screen_width, screen_hight)).convert_alpha()
+
+bgimg, (screen_width, screen_hight)).convert_alpha()
+
 pygame.display.update()
 
 clock = pygame.time.Clock()
@@ -193,4 +209,5 @@ def gameloop():
     quit()
     
 welcome()
+
 gameloop()
