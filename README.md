@@ -3,7 +3,9 @@
 
 # pip install pygame
 import pygame
+
 import random
+
 import os
 
 pygame.mixer.init()
